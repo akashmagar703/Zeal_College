@@ -38,9 +38,7 @@ class App extends Component {
           data: accountdata,
         });
         localStorage.setItem("accountdata", JSON.stringify(this.state.data));
-        //   this.setState({accountData:{...response.data}})
-        //  localStorage.setItem("accountdata",JSON.stringify(response.data))
-        //    console.log(this.state.accountData);
+        
       })
       .catch((err) => {
         console.log("API call failed");
